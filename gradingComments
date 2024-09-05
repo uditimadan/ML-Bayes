@@ -1,0 +1,44 @@
+Comments for assignment 3:
+
+1. Probability questions: 8/10
+Your answers for question 3 are off. (we can't have P > 1, for example)
+
+2. Wine dataset: 5/5
+
+3. 5-fold: 5/5
+
+4. F1 : 5/5
+
+5. Fit. 10/15
+I get this error in fit:
+raceback (most recent call last):
+  File "/Users/cbrooks/courses/Spring24/CS462/student-repos/assignment3/assignment-3-machine-learning-with-naive-bayes-submissions/assignment-3-machine-learning-with-naive-bayes-uditimadan/submission.py", line 28, in <module>
+    nb_classifier.fit(train_data.drop("Class", axis=1), train_data["Class"])
+  File "/Users/cbrooks/courses/Spring24/CS462/student-repos/assignment3/assignment-3-machine-learning-with-naive-bayes-submissions/assignment-3-machine-learning-with-naive-bayes-uditimadan/nb.py", line 36, in fit
+    example = examples[i]
+              ~~~~~~~~^^^
+  File "/Users/cbrooks/anaconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3761, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cbrooks/anaconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+
+
+6. unit test for fit 5/5
+
+7. Predict  15/15
+
+8. unit test for predict. 5/5
+
+9. Score.  5/10
+You're supposed to implement this yourself.
+
+10. Unit test for score. 5/5
+
+11. Cross-validation. 11/15
+You're supposed to do this by hand, not use sklearn.
+12: Breast cancer performance. 5/5
+
+84/100
+
